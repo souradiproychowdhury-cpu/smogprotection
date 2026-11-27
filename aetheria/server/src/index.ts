@@ -87,7 +87,7 @@ if (fs.existsSync(clientDist)) {
   });
 }
 
-if (process.env.NODE_ENV !== 'test' && !process.env.NODE_TEST_CONTEXT && !process.argv.some((a) => a.includes('.test.'))) {
+if (!process.env.VERCEL && process.env.NODE_ENV !== 'test' && !process.env.NODE_TEST_CONTEXT && !process.argv.some((a) => a.includes('.test.'))) {
   app.listen(env.PORT, () => {
     console.log(`Aetheria backend listening on http://localhost:${env.PORT}`);
     if (!env.GEMINI_API_KEY) {

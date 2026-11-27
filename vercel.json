@@ -6,8 +6,7 @@
       "framework": "vite"
     },
     "server": {
-      "root": "aetheria/server",
-      "framework": "express"
+      "root": "aetheria/server"
     }
   },
   "rewrites": [
