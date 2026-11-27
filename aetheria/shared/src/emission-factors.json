@@ -1,0 +1,119 @@
+{
+  "methodology": "Documented conservative emission and indoor air quality factors. All downstream calculations label outputs as estimates and cite the formula basis.",
+  "sources": [
+    "UK DESNZ/DEFRA Greenhouse Gas Reporting Conversion Factors 2024",
+    "CEA India CO2 Baseline Database v19 (2023) for electricity grid intensity",
+    "WHO Guidelines for Indoor Air Quality: Household Fuel Combustion (2014) & Global Air Quality Guidelines (2021)",
+    "US EPA AP-42 Compilation of Air Pollutant Emissions Factors & Box-Fan Corsi-Rosenthal CADR literature (UC Davis / Rosenthal 2021)"
+  ],
+  "whoGuideline24hPm25UgM3": 15,
+  "cookingHeatingFuels": {
+    "wood": {
+      "label": "Wood / Biomass Open Hearth",
+      "co2eKgPerHour": 2.15,
+      "indoorPm25ReleaseUgM3": 180,
+      "costPerHourInr": 18,
+      "costPerHourUsd": 0.25
+    },
+    "coal": {
+      "label": "Coal / Charcoal Briquettes",
+      "co2eKgPerHour": 2.65,
+      "indoorPm25ReleaseUgM3": 210,
+      "costPerHourInr": 22,
+      "costPerHourUsd": 0.30
+    },
+    "lpg": {
+      "label": "LPG (Liquefied Petroleum Gas)",
+      "co2eKgPerHour": 0.54,
+      "indoorPm25ReleaseUgM3": 18,
+      "costPerHourInr": 14,
+      "costPerHourUsd": 0.22
+    },
+    "electric": {
+      "label": "Electric Coil / Convection",
+      "co2eKgPerHour": 0.85,
+      "indoorPm25ReleaseUgM3": 0,
+      "costPerHourInr": 12,
+      "costPerHourUsd": 0.20
+    },
+    "induction": {
+      "label": "Induction Cooktop / Heat Pump",
+      "co2eKgPerHour": 0.62,
+      "indoorPm25ReleaseUgM3": 0,
+      "costPerHourInr": 9,
+      "costPerHourUsd": 0.15
+    }
+  },
+  "transportPerKm": {
+    "car": {
+      "label": "Private Car (Petrol/Diesel avg)",
+      "co2eKgPerKm": 0.171,
+      "costPerKmInr": 9.5,
+      "costPerKmUsd": 0.22,
+      "exposureMultiplier": 1.25
+    },
+    "motorbike": {
+      "label": "Motorbike / Scooter",
+      "co2eKgPerKm": 0.113,
+      "costPerKmInr": 3.5,
+      "costPerKmUsd": 0.08,
+      "exposureMultiplier": 1.65
+    },
+    "bus": {
+      "label": "City Bus",
+      "co2eKgPerKm": 0.089,
+      "costPerKmInr": 2.0,
+      "costPerKmUsd": 0.06,
+      "exposureMultiplier": 1.1
+    },
+    "metro": {
+      "label": "Metro / Underground Rail",
+      "co2eKgPerKm": 0.035,
+      "costPerKmInr": 2.5,
+      "costPerKmUsd": 0.07,
+      "exposureMultiplier": 0.55
+    },
+    "cycle": {
+      "label": "Bicycle",
+      "co2eKgPerKm": 0,
+      "costPerKmInr": 0,
+      "costPerKmUsd": 0,
+      "exposureMultiplier": 1.4
+    },
+    "walk": {
+      "label": "Walking",
+      "co2eKgPerKm": 0,
+      "costPerKmInr": 0,
+      "costPerKmUsd": 0,
+      "exposureMultiplier": 1.0
+    }
+  },
+  "filtration": {
+    "hepaPurifier": {
+      "cadrM3h": 300,
+      "watts": 45,
+      "dailyFilterAmortizedInr": 12,
+      "dailyFilterAmortizedUsd": 0.15
+    },
+    "diyBoxFanMerv13": {
+      "cadrM3h": 270,
+      "watts": 65,
+      "dailyFilterAmortizedInr": 5,
+      "dailyFilterAmortizedUsd": 0.07
+    },
+    "corsiRosenthalCube": {
+      "cadrM3h": 550,
+      "watts": 70,
+      "dailyFilterAmortizedInr": 9,
+      "dailyFilterAmortizedUsd": 0.12
+    },
+    "defaultRoomVolumeM3": 36,
+    "infiltrationAchUnsealed": 1.1,
+    "infiltrationAchSealed": 0.35,
+    "penetrationFactorUnsealed": 0.85,
+    "penetrationFactorSealed": 0.60,
+    "depositionRatePerHour": 0.39,
+    "defaultElectricityRateInrPerKwh": 8.0,
+    "defaultElectricityRateUsdPerKwh": 0.15
+  }
+}

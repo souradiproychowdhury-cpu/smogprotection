@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Aetheria</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#151b2b", "tertiary-fixed-dim": "#7bd0ff", "on-primary-fixed": "#2a1700", "outline": "#a08e7a", "on-error": "#690005", "inverse-surface": "#dde2f8", "on-surface-variant": "#d8c3ad", "on-tertiary": "#00354a", "primary-container": "#f59e0b", "surface-dim": "#0d1322", "on-error-container": "#ffdad6", "outline-variant": "#534434", "on-primary-container": "#613b00", "surface-container": "#191f2f", "secondary-fixed-dim": "#68dba9", "tertiary": "#8ed5ff", "tertiary-container": "#38bdf8", "inverse-on-surface": "#2a3040", "on-secondary": "#003825", "on-secondary-fixed-variant": "#005137", "surface": "#0d1322", "error": "#ffb4ab", "primary-fixed": "#ffddb8", "background": "#0d1322", "on-secondary-container": "#00311f", "surface-variant": "#2f3445", "on-secondary-fixed": "#002114", "on-tertiary-fixed-variant": "#004c69", "on-primary": "#472a00", "on-surface": "#dde2f8", "on-tertiary-container": "#004965", "secondary": "#68dba9", "surface-bright": "#33394a", "on-tertiary-fixed": "#001e2c", "on-primary-fixed-variant": "#653e00", "surface-container-highest": "#2f3445", "surface-container-lowest": "#080e1d", "secondary-container": "#25a475", "primary-fixed-dim": "#ffb95f", "on-background": "#dde2f8", "surface-tint": "#ffb95f", "surface-container-high": "#242a3a", "primary": "#ffc174", "error-container": "#93000a", "secondary-fixed": "#85f8c4", "tertiary-fixed": "#c4e7ff", "inverse-primary": "#855300" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-mobile": "1.25rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "3rem", "space-md": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-sm": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "display-lg-mobile": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-lg-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary/20"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Aetheria Royal Crest Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCiNaQwM7nLo6xkMAUqbAzklnPd9de2mja-VF9_DeqKWlyRoJLU4m5OAjFqz7My1KYZHyyv0avRnyeslSOuo45kzQUU5e5A9pDZ8wvCqKfPHbiN59eCcizMO4pLDeyqSqlz0ylh2uNYgyamho4ak5z9pomUy9PbREfwp8_i2aO27r9Qp_835FC4hig9bVrMO3PUc_myR1GXyHjz_a9NJR0NQX1IOIiU2Nz-HyBQo5U"/><div class="flex flex-col"><span class="font-display-lg-mobile text-body-md font-semibold tracking-wider text-primary leading-tight">AETHERIA</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant leading-none">Lifestyle Vault</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high/80 border border-secondary/20 shadow-[0_0_12px_rgba(104,219,169,0.15)]"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-label-sm text-label-sm font-semibold tracking-wider text-secondary uppercase">Pristine</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-space-xl gap-space-lg">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full overflow-hidden rounded-xl bg-gradient-to-b from-surface-container-high/60 to-surface-container-low p-space-md shadow-xl backdrop-blur-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block leading-none">Curated Protocol</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Vault of Atmospheric Purity</h2>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-secondary/10 flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">eco</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Grade I</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+      Aristocratic environmental wisdom engineered with GenAI precision to neutralise seasonal inversion and domestic particulates.
+    </p>
+</div>
+<!-- 1. Category Filter Carousel -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Classifications</span>
+<span class="font-label-md text-label-md text-primary font-medium">5 Playbooks</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1 -mx-margin-mobile px-margin-mobile">
+<button class="filter-chip whitespace-nowrap rounded-full px-3.5 py-1.5 font-label-md text-label-md font-semibold bg-primary text-on-primary shadow-md transition-all active:scale-95 flex items-center gap-1.5" data-filter="all">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>All Hacks</span>
+</button>
+<button class="filter-chip whitespace-nowrap rounded-full px-3.5 py-1.5 font-label-md text-label-md font-semibold bg-surface-container-high text-on-surface-variant hover:text-on-surface shadow-sm transition-all active:scale-95 flex items-center gap-1.5" data-filter="scrubbers">
+<span class="material-symbols-outlined text-[14px]">cyclone</span>
+<span>DIY Scrubbers</span>
+</button>
+<button class="filter-chip whitespace-nowrap rounded-full px-3.5 py-1.5 font-label-md text-label-md font-semibold bg-surface-container-high text-on-surface-variant hover:text-on-surface shadow-sm transition-all active:scale-95 flex items-center gap-1.5" data-filter="cooking">
+<span class="material-symbols-outlined text-[14px]">skillet</span>
+<span>Low-Emission Cooking</span>
+</button>
+<button class="filter-chip whitespace-nowrap rounded-full px-3.5 py-1.5 font-label-md text-label-md font-semibold bg-surface-container-high text-on-surface-variant hover:text-on-surface shadow-sm transition-all active:scale-95 flex items-center gap-1.5" data-filter="botanical">
+<span class="material-symbols-outlined text-[14px]">potted_plant</span>
+<span>Botanical Filters</span>
+</button>
+<button class="filter-chip whitespace-nowrap rounded-full px-3.5 py-1.5 font-label-md text-label-md font-semibold bg-surface-container-high text-on-surface-variant hover:text-on-surface shadow-sm transition-all active:scale-95 flex items-center gap-1.5" data-filter="commuting">
+<span class="material-symbols-outlined text-[14px]">commute</span>
+<span>Winter Commuting</span>
+</button>
+</div>
+</section>
+<!-- 2. Curated GenAI Hack Library Cards -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Sovereign Interventions</span>
+<span class="material-symbols-outlined text-primary text-[20px]">filter_vintage</span>
+</div>
+<!-- Hack 1: Kitchen Air & Simmer Pot -->
+<article class="relative flex flex-col rounded-xl bg-surface-container-high/90 p-space-md shadow-xl overflow-hidden backdrop-blur-xl group">
+<div class="relative h-44 w-full rounded-lg overflow-hidden mb-space-sm shadow-md">
+<img class="w-full h-full object-cover" data-alt="A moody, high-end luxury kitchen at night during winter, featuring a gleaming brass induction simmering casserole emitting delicate, pristine vapor droplets under soft champagne warm downlighting, capturing moisture coagulating particulate dust into glistening dew." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb73ppFEE7h8dDziWzJxt1v4aGurF5tYH0VtjYPjbyAQI3dkLO8lO3n2DDg5GJzFGeFJZRrVWdRCBkuEefJkt2y6kzjxfeQlr3UlziV6rkEqjzcUojxBdXOOa4FIYawKflClGBaKfC_-JHCgcaSr49T6yDF4WYSSi4oS2VDLDGXq06Eo1EB_JQTVXS1xfb1M0gOdaE9gRYLjLSJ2sxs-tGOG_Qp5GRoDTEfKNgI8c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-2.5 right-2.5 flex items-center gap-1.5">
+<button aria-label="Save hack" class="bookmark-btn w-9 h-9 rounded-full bg-surface-container-lowest/80 text-primary hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center shadow-lg active:scale-90">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="absolute bottom-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 px-2.5 py-1 rounded-full shadow">
+<span class="material-symbols-outlined text-secondary text-[14px]">bolt</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">GenAI Verified Impact</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-xs">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">Low Cost</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary/20 text-primary">High Impact</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary/20 text-tertiary">Kitchen Air</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">The Winter Simmer Pot &amp; Particulate Trap</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+        Swapping open flame gas searing for covered induction steaming during high thermal inversions eliminates toxic VOCs. Micro-fine moisture vapors physically bind with airborne PM2.5, precipitating heavy particles swiftly below the breathing zone.
+      </p>
+<!-- Impact Dial / Stat Banner -->
+<div class="mt-space-sm rounded-lg bg-surface-container-lowest p-space-sm flex items-center justify-between shadow-inner">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">air</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block">Measured Impact</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold tracking-tight">-64% NO₂</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Clearance Window</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">20 Minutes</span>
+</div>
+</div>
+</article>
+<!-- Hack 2: Botanical Nitrogen Scavengers -->
+<article class="relative flex flex-col rounded-xl bg-surface-container-high/90 p-space-md shadow-xl overflow-hidden backdrop-blur-xl">
+<div class="relative h-44 w-full rounded-lg overflow-hidden mb-space-sm shadow-md">
+<img class="w-full h-full object-cover" data-alt="An opulent aristocratic bedroom suite illuminated by moonlight and soft golden lamps, featuring an architectural Sansevieria snake plant in a hammered brass vessel beside a polished mahogany bedstead, emitting subtle botanical clean mist lines in a deep twilight color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADomPrNV49yx14QUvmX37MQiplXV90Hv-6m5EWSCppHzC_NDmlKuwo6smZ7gRG1WqfhzG1u1V80uYzJRVwnUGPnmFff-JKVlnnableFu7bwkquG0J9QFmCl2j0zarXShdS8sDPgy6Gm5azleb9Z5EjyPgflEgIhuF74SfrG9ygO4B_FJXSJ13a20zuHRW9L7uhDc_p2Ag8SV60pzbwDEfODi5d4y8laE1T9viyM_U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-2.5 right-2.5 flex items-center gap-1.5">
+<button aria-label="Save hack" class="bookmark-btn w-9 h-9 rounded-full bg-surface-container-lowest/80 text-primary hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center shadow-lg active:scale-90">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="absolute bottom-2.5 left-2.5 flex items-center gap-1.5 bg-surface-container-lowest/80 px-2.5 py-1 rounded-full shadow">
+<span class="material-symbols-outlined text-secondary text-[14px]">psychology</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Crown Phytoremediation</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-xs">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary/20 text-secondary">Botanical Shield</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">Overnight Rest</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Botanical Nitrogen Scavengers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+        Phyto-catalytic absorption transforms nighttime respiratory zones into enriched oxygen vaults without electromagnetic disturbance.
+      </p>
+<!-- Royal Plant Ranks -->
+<div class="mt-space-sm grid grid-cols-2 gap-space-xs">
+<div class="rounded-lg bg-surface-container-low p-2.5 flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">RANK 1 • SANSEVIERIA</span>
+<span class="material-symbols-outlined text-primary text-[14px]">grade</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Snake Plant</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Continuous Crassulacean acid oxygen release.</span>
+</div>
+<div class="rounded-lg bg-surface-container-low p-2.5 flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">RANK 2 • NEPHROLEPIS</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">water_drop</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Boston Fern</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">High transpiration humidity &amp; formaldehyde bind.</span>
+</div>
+</div>
+<!-- GenAI Placement Envelope -->
+<div class="mt-space-sm rounded-lg bg-surface-container-lowest p-space-sm flex items-start gap-space-xs shadow-inner">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">auto_awesome</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Oracle Micro-Envelope Strategy</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Position precisely <strong>1.0 meter</strong> from bedside apex. Generates a low-density, localized clean-air dome shielding inhalation paths from ambient draft settle.
+          </p>
+</div>
+</div>
+</article>
+<!-- Hack 3: Window Inversion Sealing Trick -->
+<article class="relative flex flex-col rounded-xl bg-surface-container-high/90 p-space-md shadow-xl overflow-hidden backdrop-blur-xl">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary/20 text-primary">Hermetic Shell</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">DIY Craft</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Window Inversion Sealing Trick</h3>
+</div>
+<button aria-label="Save hack" class="bookmark-btn w-9 h-9 rounded-full bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center shadow-lg active:scale-90">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs leading-relaxed">
+        Historic architecture sash windows leak sulfurous outdoor haze during thermal inversions. Employ heavy natural-grain thermal draft snakes alongside magnetic silicone edge tapes to create an impenetrable, reversible micro-seal.
+      </p>
+<div class="mt-space-sm flex items-center gap-3 p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[18px]">shield</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Infiltration Blockade</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">Zero sulfurous haze seepage &amp; 100% draft deflection</span>
+</div>
+</div>
+</article>
+</section>
+<!-- 3. 'Sustainable Winter Alternatives' Comparator -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant block">Comparative Analysis</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Sustainable Winter Alternatives</h3>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">balance</span>
+</div>
+</div>
+<!-- Comparative Split Card -->
+<div class="grid grid-cols-1 gap-space-sm rounded-xl bg-surface-container-high p-space-md shadow-xl">
+<!-- Traditional Method -->
+<div class="relative rounded-lg bg-surface-container-low p-space-sm overflow-hidden">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+            Traditional Paradigm
+          </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">High Hazard</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Open Fireplace / Wood Pellet Stove</h4>
+<div class="mt-space-xs space-y-1">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Particulate Release</span>
+<span class="text-error font-semibold">+180 µg/m³ PM2.5 surge</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>External Footprint</span>
+<span class="text-error font-medium">High neighborhood fallout</span>
+</div>
+</div>
+<!-- Particulate Visual Bar -->
+<div class="mt-space-sm w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-error h-full rounded-full w-[85%]"></div>
+</div>
+</div>
+<!-- Royal Sanctuary Alternative -->
+<div class="relative rounded-lg bg-surface-container-lowest p-space-sm shadow-md">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            Royal Alternative
+          </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">Clean Sovereign</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary font-semibold">Zoned Far-Infrared Radiant Panels + Heavy Thermal Velour</h4>
+<div class="mt-space-xs space-y-1">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Particulate Footprint</span>
+<span class="text-secondary font-bold">0 µg/m³ (Zero Emissions)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Energy Efficiency</span>
+<span class="text-secondary font-medium">45% Lower Carbon Demand</span>
+</div>
+</div>
+<!-- Radiant Zero-Emission Visual Bar -->
+<div class="mt-space-sm w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[100%] shadow-[0_0_8px_rgba(104,219,169,0.5)]"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 pt-2 border-t border-surface-container-high/40 leading-snug">
+          Infrared heats physical envelopes and bodies directly rather than circulating convection-heated particulate clouds.
+        </p>
+</div>
+</div>
+</section>
+<!-- 4. 'My Household Sanctuary Checklist' -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant block">Tactile Routine</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Household Sanctuary Checklist</h3>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary/20 text-primary font-bold" id="checklist-progress">1 of 3 Ready</span>
+</div>
+<!-- Interactive Checklist Container -->
+<div class="flex flex-col gap-space-xs rounded-xl bg-surface-container-high/80 p-space-sm backdrop-blur-xl shadow-lg">
+<!-- Item 1: Checked -->
+<label class="checklist-item flex items-center justify-between p-space-sm rounded-lg bg-surface-container transition-all hover:bg-surface-container-highest cursor-pointer">
+<div class="flex items-center gap-space-sm min-w-0">
+<input checked="" class="sanctuary-check hidden" data-id="1" type="checkbox"/>
+<div class="check-box w-6 h-6 rounded-md bg-secondary flex items-center justify-center text-on-secondary shrink-0 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="task-title font-body-md text-body-md text-on-surface font-medium line-through opacity-75 truncate">Pre-filter vacuumed</span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">energy_savings_leaf</span>
+              Saved 12% HVAC energy
+            </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+</label>
+<!-- Item 2: Unchecked -->
+<label class="checklist-item flex items-center justify-between p-space-sm rounded-lg bg-surface-container transition-all hover:bg-surface-container-highest cursor-pointer">
+<div class="flex items-center gap-space-sm min-w-0">
+<input class="sanctuary-check hidden" data-id="2" type="checkbox"/>
+<div class="check-box w-6 h-6 rounded-md bg-surface-container-highest flex items-center justify-center text-transparent shrink-0 transition-all shadow-inner">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="task-title font-body-md text-body-md text-on-surface font-medium truncate">Cooker hood vented on high</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recommended during breakfast meal prep</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">schedule</span>
+</label>
+<!-- Item 3: Unchecked -->
+<label class="checklist-item flex items-center justify-between p-space-sm rounded-lg bg-surface-container transition-all hover:bg-surface-container-highest cursor-pointer">
+<div class="flex items-center gap-space-sm min-w-0">
+<input class="sanctuary-check hidden" data-id="3" type="checkbox"/>
+<div class="check-box w-6 h-6 rounded-md bg-surface-container-highest flex items-center justify-center text-transparent shrink-0 transition-all shadow-inner">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="task-title font-body-md text-body-md text-on-surface font-medium truncate">Air monitor calibrated to AI mesh</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Synchronize micro-sensors for smog forecast</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">sync</span>
+</label>
+</div>
+</section>
+<!-- Lifestyle Vault Sovereign Action -->
+<div class="mt-space-xs rounded-xl bg-gradient-to-r from-primary-container via-primary to-primary-fixed-dim p-space-md text-on-primary-container flex items-center justify-between shadow-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Bespoke Vault Service</span>
+<h4 class="font-headline-sm text-headline-sm font-bold tracking-tight">Request In-Home Audit</h4>
+<span class="font-body-sm text-body-sm opacity-90 mt-0.5">Complimentary GenAI thermal imaging assessment</span>
+</div>
+<button class="w-12 h-12 rounded-full bg-on-primary-container text-primary flex items-center justify-center shadow-lg active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[24px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<script>
+  (function initVaultInteractions() {
+    // 1. Interactive Bookmark Buttons
+    const bookmarks = document.querySelectorAll('.bookmark-btn');
+    bookmarks.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const isFilled = icon.style.fontVariationSettings.includes("'FILL' 1");
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('bg-primary', 'text-on-primary');
+          btn.classList.add('bg-surface-container-lowest/80', 'text-primary');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('bg-surface-container-lowest/80', 'text-primary');
+        }
+      });
+    });
+
+    // 2. Filter Carousel Toggles
+    const chips = document.querySelectorAll('.filter-chip');
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => {
+          c.classList.remove('bg-primary', 'text-on-primary');
+          c.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        chip.classList.add('bg-primary', 'text-on-primary');
+        chip.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      });
+    });
+
+    // 3. Interactive Household Checklist Logic
+    const checkboxes = document.querySelectorAll('.sanctuary-check');
+    const progressBadge = document.getElementById('checklist-progress');
+
+    function updateProgress() {
+      const total = checkboxes.length;
+      const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+      if (progressBadge) {
+        progressBadge.textContent = `${checkedCount} of ${total} Ready`;
+        if (checkedCount === total) {
+          progressBadge.classList.remove('bg-primary/20', 'text-primary');
+          progressBadge.classList.add('bg-secondary/20', 'text-secondary');
+        } else {
+          progressBadge.classList.add('bg-primary/20', 'text-primary');
+          progressBadge.classList.remove('bg-secondary/20', 'text-secondary');
+        }
+      }
+    }
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        const item = cb.closest('.checklist-item');
+        const box = item.querySelector('.check-box');
+        const title = item.querySelector('.task-title');
+
+        if (cb.checked) {
+          box.classList.remove('bg-surface-container-highest', 'text-transparent');
+          box.classList.add('bg-secondary', 'text-on-secondary');
+          title.classList.add('line-through', 'opacity-75');
+        } else {
+          box.classList.add('bg-surface-container-highest', 'text-transparent');
+          box.classList.remove('bg-secondary', 'text-on-secondary');
+          title.classList.remove('line-through', 'opacity-75');
+        }
+        updateProgress();
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.3)]" data-active-classes="text-primary"><div class="h-16 px-space-xs flex items-center justify-around"><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant transition-all hover:text-on-surface" data-path="sanctuary" href="#"><span class="material-symbols-outlined text-[22px]">shield_with_house</span><span class="font-label-sm text-label-sm tracking-wide">Sanctuary</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant transition-all hover:text-on-surface" data-path="genai-oracle" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-sm text-label-sm tracking-wide">Oracle</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant transition-all hover:text-on-surface" data-path="community-impact" href="#"><span class="material-symbols-outlined text-[22px]">globe</span><span class="font-label-sm text-label-sm tracking-wide">Impact</span></a><a aria-current="page" class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 transition-all text-primary" data-path="lifestyle-vault" href="#"><span class="material-symbols-outlined text-[22px]">diamond</span><span class="font-label-sm text-label-sm tracking-wide">Vault</span></a></div></nav></body></html>

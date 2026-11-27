@@ -1,0 +1,111 @@
+{
+  "appName": "Aetheria",
+  "purpose": "GenAI-powered clean-air assistant helping families and communities navigate severe winter smog and urban air pollution.",
+  "routes": [
+    {
+      "path": "/",
+      "name": "Sanctuary",
+      "features": [
+        "Live US AQI Crown Dial with PM2.5, WHO guideline multiple, and source timestamp",
+        "Location picker (GPS or city autocomplete)",
+        "Next Clean Air Ventilation Window with Remind Me notification button",
+        "Windows Sealed, Purifier Running, and Family Safe Mode toggles that dynamically recalculate indoor PM2.5",
+        "GenAI Curated Daily Routine timeline with completion checkboxes",
+        "Direct Personal Impact panel with tappable formula breakdown modal",
+        "Quick links to Oracle, Health Profile, Inversion Alert (when active), Clean-Air Route, and Share Routine"
+      ]
+    },
+    {
+      "path": "/oracle",
+      "name": "Oracle",
+      "features": [
+        "GenAI chat returning structured Protocol Cards (title, urgency, assembly time, 3 steps, impact metrics, natural remedy, honest confidence & evidence note)",
+        "Save to Vault bookmarks and Share via native share / WhatsApp / SMS / copy",
+        "Voice dictation microphone and Room/Filter/Stove optical camera/file scanner",
+        "Answer style filter modal (short/detailed, budget cap, kid-friendly, elderly-friendly)",
+        "Dynamic suggested chips including Clean-Air Route navigation and Wind Dispersion alert subscription",
+        "Listen button for text-to-speech playback"
+      ]
+    },
+    {
+      "path": "/impact",
+      "name": "Impact",
+      "features": [
+        "Neighbourhood Clean Air Guild with seed-data indicator and live SQLite pledge counters",
+        "Interactive Leaflet map showing local AQI stations/grid markers",
+        "Sortable Districts of Merit leaderboard",
+        "Solidarity Protocol pledge buttons (Evening Stove Curfew, Stop Open Burning, Carpool/Metro) limited to 1 pledge per type per device per day",
+        "Achievement badges unlocked by real user actions"
+      ]
+    },
+    {
+      "path": "/vault",
+      "name": "Vault",
+      "features": [
+        "Playbook cards (DIY Box-Fan/Corsi-Rosenthal Filter, Window Inversion Sealing, Botanical Scavengers, Winter Simmer Pot with honest evidence note)",
+        "AI-enriched Playbook Detail sheet with materials, steps, cost, and safety notes",
+        "Category filters, search box, and Saved bookmarks tab",
+        "Sustainable Winter Alternatives comparator personalized to user's fuel and transport",
+        "Interactive Household Sanctuary Checklist synced with Sanctuary impact totals"
+      ]
+    },
+    {
+      "path": "/health",
+      "name": "Health Profile",
+      "features": [
+        "Switch between or add/edit vulnerable household dependents (e.g. Pediatric Asthma, Elderly COPD)",
+        "AI-computed safe AQI threshold vs current ambient reading",
+        "Medication dose tracker with Mark Administered button and remaining dose countdown",
+        "Clinical Early Warning Symptom Log form",
+        "GenAI Shield Directives with medical disclaimer",
+        "Emergency Rescue Protocol with direct tel: call button and WhatsApp/SMS live coordinate sharing"
+      ]
+    },
+    {
+      "path": "/alert",
+      "name": "Inversion Alert",
+      "features": [
+        "Live thermal inversion detection from boundary-layer height and wind speed",
+        "Animated Thermal Inversion Physics layered diagram",
+        "Midday Protocol Checklist for school/family",
+        "AI-drafted editable School/Caregiver advisory message in chosen language with WhatsApp/SMS/Email/Copy dispatch and sent alerts log",
+        "Web Push alert subscription and test notification button"
+      ]
+    },
+    {
+      "path": "/route",
+      "name": "Clean-Air Route",
+      "features": [
+        "Origin (GPS or search) and Destination search",
+        "Walking route alternatives ranked by cumulative PM2.5 exposure (concentration × time)",
+        "Interactive Leaflet map with color-coded AQI polylines and timed waypoints",
+        "Best departure window advisor from next 3h forecast",
+        "Start Live Voice-Guided Navigation, Share Live ETA, and Save Route"
+      ]
+    },
+    {
+      "path": "/tutorial",
+      "name": "Tutorial Library",
+      "features": [
+        "Start / Resume / Replay 24-step Guided Tour with auto-play and voice narration",
+        "Topic lessons with Listen button and interactive Practice mode",
+        "Ask-the-Tutorial AI box answered using app-manifest.json"
+      ]
+    },
+    {
+      "path": "/settings",
+      "name": "Settings & Setup Check",
+      "features": [
+        "Backend API key status check (GEMINI_API_KEY, WAQI_TOKEN, ORS_API_KEY, VAPID) with direct links",
+        "Accessibility controls (font size A-/A+, Voice-Only Mode, Always Read Answers Aloud, Speech Speed)",
+        "Export / Import Profile JSON and Delete All My Data"
+      ]
+    }
+  ],
+  "aqiSpectrum": {
+    "0-25": "Sovereign Pristine (Emerald)",
+    "26-75": "Temperate Shift (Teal/Cyan)",
+    "76-150": "Smog Intrusion (Amber)",
+    "151+": "Hazardous Sovereign Breach (Crimson)"
+  }
+}

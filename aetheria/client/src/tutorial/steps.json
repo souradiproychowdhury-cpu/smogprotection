@@ -1,0 +1,170 @@
+[
+  {
+    "id": "welcome-header",
+    "route": "/",
+    "target": "[data-tour='header-brand']",
+    "title": "Welcome to Aetheria",
+    "body": "Aetheria is your clean-air companion during winter smog. This top bar stays visible on every screen so you can always see your current air status and get help."
+  },
+  {
+    "id": "header-aqi-pill",
+    "route": "/",
+    "target": "[data-tour='header-aqi-pill']",
+    "title": "Live AQI Status Pill",
+    "body": "This pill shows the live US AQI category using four colours: Green (0–25 Pristine), Teal (26–75 Temperate), Amber (76–150 Smog Intrusion), and Crimson (151+ Hazardous). Tap it to view live breakdown details."
+  },
+  {
+    "id": "header-language",
+    "route": "/",
+    "target": "[data-tour='header-lang']",
+    "title": "Language Selector",
+    "body": "Tap here to switch Aetheria into any language—including Hindi, Bengali, Tamil, Spanish, Arabic, Swahili, or any language you type. Both text and voice adapt automatically."
+  },
+  {
+    "id": "header-help",
+    "route": "/",
+    "target": "[data-tour='header-help']",
+    "title": "Interactive Help & Tutorial",
+    "body": "Tap the question mark anytime to open the Tutorial Library, replay this guided tour, or ask how any feature works."
+  },
+  {
+    "id": "header-profile",
+    "route": "/",
+    "target": "[data-tour='header-profile']",
+    "title": "Household Profile & Settings",
+    "body": "Tap your profile avatar to tell Aetheria about your family (infants, seniors, asthma), your cooking fuel, commute mode, and location so every recommendation is personalised."
+  },
+  {
+    "id": "sanctuary-location",
+    "route": "/",
+    "target": "[data-tour='location-bar']",
+    "title": "Your Live Location",
+    "body": "Tap your city name to switch cities or re-detect your GPS position. All air quality readings, forecasts, and routines update immediately for the selected area."
+  },
+  {
+    "id": "sanctuary-dial",
+    "route": "/",
+    "target": "[data-tour='aqi-dial']",
+    "title": "Ambient AQI Crown Dial",
+    "body": "The dial displays live US AQI, PM2.5 concentration, and how many times higher it is than the WHO 24-hour safe guideline (15 µg/m³). Underneath is the source and exact update time."
+  },
+  {
+    "id": "sanctuary-ventilation",
+    "route": "/",
+    "target": "[data-tour='ventilation-window']",
+    "title": "Best Ventilation Window",
+    "body": "Calculated from hourly PM2.5 and atmospheric boundary-layer forecasts, this card shows the cleanest time to open windows. Tap 'Remind me' to schedule an alert."
+  },
+  {
+    "id": "sanctuary-toggles",
+    "route": "/",
+    "target": "[data-tour='sealing-toggles']",
+    "title": "Windows Sealed & Purifier Status",
+    "body": "Toggle whether your windows are sealed and whether a purifier or DIY box-fan filter is running. Changing these immediately recalculates your indoor PM2.5 estimate."
+  },
+  {
+    "id": "sanctuary-routine",
+    "route": "/",
+    "target": "[data-tour='daily-routine']",
+    "title": "GenAI Daily Low-Emission Routine",
+    "body": "Your morning-to-evening schedule generated from today's forecast and your household profile. Check off each step as you complete it to update your impact totals."
+  },
+  {
+    "id": "sanctuary-impact",
+    "route": "/",
+    "target": "[data-tour='personal-impact']",
+    "title": "Direct Personal Impact & Transparency",
+    "body": "See estimated CO₂ spared, PM2.5 exposure avoided, and money saved today. Tap any metric card to open the exact formula and inputs used to calculate it."
+  },
+  {
+    "id": "oracle-tab",
+    "route": "/oracle",
+    "target": "[data-tour='oracle-suggestions']",
+    "title": "Meet the GenAI Smog Oracle",
+    "body": "Switch to Oracle to ask any question about winter smog, safe indoor hacks, masks, or commuting. Tap any suggested chip to start instantly."
+  },
+  {
+    "id": "oracle-composer",
+    "route": "/oracle",
+    "target": "[data-tour='oracle-composer']",
+    "title": "Ask, Speak, or Scan a Room",
+    "body": "Type your question, tap the microphone to speak in your language, or tap the scanner icon to upload a photo of your room, stove, mask, or filter for AI inspection."
+  },
+  {
+    "id": "oracle-filters",
+    "route": "/oracle",
+    "target": "[data-tour='oracle-filter-btn']",
+    "title": "Customise Oracle Answers",
+    "body": "Tap the tune button to choose short vs detailed answers, set a budget cap, or turn on kid-friendly and elderly-friendly tailoring."
+  },
+  {
+    "id": "impact-guild",
+    "route": "/impact",
+    "target": "[data-tour='impact-hero']",
+    "title": "Neighbourhood Clean Air Guild",
+    "body": "See how your local area is tackling winter smog together. All counters show verified community pledges recorded in your area."
+  },
+  {
+    "id": "impact-map",
+    "route": "/impact",
+    "target": "[data-tour='impact-map']",
+    "title": "Live Local Pollution Map",
+    "body": "Explore real-time air quality markers around your neighbourhood using OpenStreetMap and live station/grid data."
+  },
+  {
+    "id": "impact-pledges",
+    "route": "/impact",
+    "target": "[data-tour='impact-pledges']",
+    "title": "Take a Clean-Air Pledge",
+    "body": "Join a pledge such as stopping open waste burning, switching to LPG/induction, or carpooling. Pledging updates the live counter and unlocks achievement badges."
+  },
+  {
+    "id": "vault-playbooks",
+    "route": "/vault",
+    "target": "[data-tour='vault-filters']",
+    "title": "Indoor Hacks & Sustainable Vault",
+    "body": "Filter practical playbooks like DIY box-fan filters, window sealing, and honest evidence notes—plus your Saved bookmarks tab."
+  },
+  {
+    "id": "vault-alternatives",
+    "route": "/vault",
+    "target": "[data-tour='vault-alternatives']",
+    "title": "Sustainable Alternatives Comparator",
+    "body": "Compare your current cooking fuel and commute mode against cleaner alternatives with transparent cost and CO₂ deltas based on your profile."
+  },
+  {
+    "id": "vault-checklist",
+    "route": "/vault",
+    "target": "[data-tour='vault-checklist']",
+    "title": "Household Sanctuary Checklist",
+    "body": "Complete quick daily readiness checks. Every item checked improves your Sanctuary impact score."
+  },
+  {
+    "id": "health-profile",
+    "route": "/health",
+    "target": "[data-tour='health-boundary']",
+    "title": "Asthma & Vulnerability Shield",
+    "body": "Manage vulnerable family members, see their safe AQI threshold, log medication doses and symptoms, and access one-tap emergency calling and location sharing."
+  },
+  {
+    "id": "inversion-alert",
+    "route": "/alert",
+    "target": "[data-tour='alert-physics']",
+    "title": "Thermal Inversion & School Alerts",
+    "body": "Understand when cold ground air traps smog under a warm atmospheric lid, check off midday school protections, and generate a parent/school alert in your language."
+  },
+  {
+    "id": "clean-route",
+    "route": "/route",
+    "target": "[data-tour='route-planner']",
+    "title": "Clean-Air Walking Route Navigator",
+    "body": "Compare walking corridors ranked by total PM2.5 inhalation exposure (concentration × time), follow live voice-guided waypoints, or share your ETA."
+  },
+  {
+    "id": "voice-assistant",
+    "route": "/",
+    "target": "[data-tour='global-mic']",
+    "title": "Global Multilingual Voice Assistant",
+    "body": "Tap this floating microphone button on any screen to navigate, check air quality, log an inhaler dose, switch languages, or ask the Oracle hands-free!"
+  }
+]
