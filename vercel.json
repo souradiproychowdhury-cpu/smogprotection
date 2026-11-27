@@ -6,7 +6,8 @@
       "framework": "vite"
     },
     "server": {
-      "root": "aetheria/server"
+      "root": "aetheria/server",
+      "entrypoint": "src/index.ts"
     }
   },
   "rewrites": [
