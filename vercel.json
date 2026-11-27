@@ -1,27 +1,17 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "services": {
-    "client": {
-      "root": "aetheria/client",
-      "framework": "vite"
-    },
-    "server": {
-      "root": "aetheria/server",
-      "entrypoint": "src/index.ts"
-    }
-  },
+  "installCommand": "cd aetheria && npm install",
+  "buildCommand": "cd aetheria && npm run build --workspace shared && npm run build --workspace client",
+  "outputDirectory": "aetheria/client/dist",
+  "framework": "vite",
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": {
-        "service": "server"
-      }
+      "destination": "/api"
     },
     {
-      "source": "/(.*)",
-      "destination": {
-        "service": "client"
-      }
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
     }
   ]
 }

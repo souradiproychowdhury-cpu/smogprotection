@@ -16,10 +16,5 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "playwright": "^1.65.1"
-  },
-  "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.68.8",
-    "@rollup/rollup-linux-x64-musl": "4.68.8",
-    "@esbuild/linux-x64": "0.28.2"
   }
 }
