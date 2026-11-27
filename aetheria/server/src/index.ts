@@ -28,7 +28,12 @@ const allowedOrigins = new Set([
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin || allowedOrigins.has(origin)) {
+      if (
+        !origin ||
+        allowedOrigins.has(origin) ||
+        origin.endsWith('.vercel.app') ||
+        (process.env.VERCEL_URL && origin === `https://${process.env.VERCEL_URL}`)
+      ) {
         callback(null, true);
       } else {
         callback(null, false);
@@ -90,3 +95,5 @@ if (process.env.NODE_ENV !== 'test' && !process.env.NODE_TEST_CONTEXT && !proces
     }
   });
 }
+
+export default app;

@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "npm --prefix ../shared run build",
     "build": "tsc -p tsconfig.json && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@aetheria/shared": "*",
+    "@aetheria/shared": "file:../shared",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

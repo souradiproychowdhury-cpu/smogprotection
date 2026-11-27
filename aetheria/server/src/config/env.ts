@@ -9,11 +9,14 @@ dotenv.config({ path: path.resolve(WORKSPACE_ROOT, '.env') });
 dotenv.config();
 
 const rawDbPath = (process.env.DATABASE_PATH || '').trim();
+const defaultDbPath = process.env.VERCEL
+  ? path.resolve('/tmp', 'data.db')
+  : path.resolve(WORKSPACE_ROOT, 'data.db');
 const resolvedDbPath = rawDbPath
   ? path.isAbsolute(rawDbPath)
     ? rawDbPath
     : path.resolve(WORKSPACE_ROOT, rawDbPath)
-  : path.resolve(WORKSPACE_ROOT, 'data.db');
+  : defaultDbPath;
 
 export const env = {
   PORT: Number(process.env.PORT || 3002),

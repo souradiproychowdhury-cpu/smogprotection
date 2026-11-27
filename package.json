@@ -1,0 +1,14 @@
+{
+  "name": "pollution",
+  "private": true,
+  "workspaces": [
+    "aetheria/shared",
+    "aetheria/server",
+    "aetheria/client"
+  ],
+  "scripts": {
+    "dev": "npm run dev --prefix aetheria",
+    "build": "npm run build --prefix aetheria",
+    "test": "npm run test --prefix aetheria"
+  }
+}
