@@ -12,6 +12,11 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
+    resolve: {
+      alias: {
+        '@aetheria/shared': path.resolve(__dirname, '../shared/src/index.ts')
+      }
+    },
     server: {
       port: 5173,
       proxy: {
